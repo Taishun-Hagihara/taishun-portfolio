@@ -17,10 +17,14 @@ function App() {
       </header>
       <main>
         <section id="hero">
-          <h2>header</h2>
+        <h1 className="text-3xl font-bold underline">Hello</h1>
+
         </section>
         <section id="project">
-          <h2>project</h2>
+          <h2>過去作品</h2>
+          <div className="card">
+
+          </div>
         </section>
         <section id="about">
           <h2>about</h2>
