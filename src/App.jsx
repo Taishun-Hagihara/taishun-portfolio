@@ -8,13 +8,26 @@ function App() {
   return (
     <>
       <header>
-        <h1>自分でコードを書いていくことにしている</h1>
+        <nav>
+          <a href="#hero">Hero</a>
+          <a href="#project">Project</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
       <main>
-        <section className="Hero"></section>
-        <section className="Project"></section>
-        <section className="About"></section>
-        <section className="Contact"></section>
+        <section id="hero">
+          <h2>header</h2>
+        </section>
+        <section id="project">
+          <h2>project</h2>
+        </section>
+        <section id="about">
+          <h2>about</h2>
+        </section>
+        <section id="contact">
+          <h2>contact</h2>
+        </section>
       </main>
       <footer></footer>
     </>
