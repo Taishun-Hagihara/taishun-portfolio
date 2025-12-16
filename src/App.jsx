@@ -6,25 +6,24 @@ import './App.css'
 function App() {
   
   return (
-    <>
-      <header>
+    <div className='compose' class="size-full border-1 p-0 m-0 bg-white">
+      <header class="border-2 w-full h-16 bg-white opacity-80">
+        <h1>header始まり</h1>
         <nav>
-          <a href="#hero">Hero</a>
-          <a href="#project">Project</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#hero" class="inline-block">Hero</a>
+          <a href="#project" class="inline-block">Project</a>
+          <a href="#about" class="inline-block">About</a>
+          <a href="#contact" class="inline-block">Contact</a>
         </nav>
       </header>
-      <main>
+      <main class="mx-auto w-4/5 border-2">
+      <h1>main始まり</h1>
         <section id="hero">
         <h1 className="text-3xl font-bold underline">Hello</h1>
-
         </section>
-        <section id="project">
+        <section id="project" class="w-3/4 h-300 border-2 mx-auto">
           <h2>過去作品</h2>
-          <div className="card">
-
-          </div>
+      
         </section>
         <section id="about">
           <h2>about</h2>
@@ -33,8 +32,10 @@ function App() {
           <h2>contact</h2>
         </section>
       </main>
-      <footer></footer>
-    </>
+      <footer class="m-0 w-full border-2">
+        <h1>footer始まり</h1>
+      </footer>
+    </div>
   )
 }
 
