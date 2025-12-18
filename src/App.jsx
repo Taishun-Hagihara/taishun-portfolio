@@ -29,7 +29,11 @@ function App() {
         </section>
         <section id="contact" className="h-150 border-2 mx-auto text-[#0F172A]">
           <h2 className='text-[45px]'>contact</h2>
+          <a href="https://github.com/ユーザー名" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-sky-400 underline">
+          GitHub
+          </a>
 
+          
         </section>
       </main>
       <footer className="m-0 w-full border-2">
