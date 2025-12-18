@@ -7,7 +7,7 @@ function App() {
   
   return (
     <div className='compose' class="size-full border-1 p-0 m-0 bg-white">
-      <header class="border-2 w-full h-16 bg-white opacity-80">
+      <header class="border-2 w-full h-16 bg-white opacity-80 sticky top-0">
         <h1>header始まり</h1>
         <nav>
           <a href="#hero" class="inline-block">Hero</a>
