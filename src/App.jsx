@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { FaGithub } from "react-icons/fa";
 import './App.css'
 
 function App() {
@@ -29,8 +30,8 @@ function App() {
         </section>
         <section id="contact" className="h-150 border-2 mx-auto text-[#0F172A]">
           <h2 className='text-[45px]'>contact</h2>
-          <a href="https://github.com/ユーザー名" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-sky-400 underline">
-          GitHub
+          <a href="https://github.com/ユーザー名" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-sky-400 underline m-4 border-2 p-2">
+          <FaGithub />GitHub
           </a>
 
           
