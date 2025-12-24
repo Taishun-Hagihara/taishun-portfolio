@@ -65,6 +65,7 @@ function Layout() {
 }
 
 //<Outlet>は下記のrouteに従って表示する内容を出力するためのもの。例えばpath=aboutなら<About/>を表示するといった感じ。
+//そしてこのoutletはRoute内でしか機能しない
 export default function Router() {
   return (
     <BrowserRouter>
@@ -80,3 +81,5 @@ export default function Router() {
     </BrowserRouter>
   );
 }
+//<Route element={Layout}>とあるがここのLayoutは上の関数である。そして、route path=....によって成立した条件がLayoutのOutletに入る
+//結果的にlayoutの要素として配置される。体感childrenみたいな感じやな
