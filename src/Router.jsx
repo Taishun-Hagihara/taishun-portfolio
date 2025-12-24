@@ -52,7 +52,7 @@ function Header() {
   );
 }
 
-// 共通レイアウト：ヘッダー + 差し替え領域
+
 function Layout() {
   return (
     <div className="min-h-screen bg-white">
@@ -64,7 +64,7 @@ function Layout() {
   );
 }
 
-// ルーター本体
+//<Outlet>は下記のrouteに従って表示する内容を出力するためのもの。例えばpath=aboutなら<About/>を表示するといった感じ。
 export default function Router() {
   return (
     <BrowserRouter>
