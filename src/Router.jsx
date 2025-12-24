@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, NavLink, Outlet } from "react-router-dom";
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Works from "./pages/Works"
+import Contact from "./pages/Contact"
 
 // 各ページ
-const Home = () => <div className="text-xl font-semibold">Homeeeeee</div>;
-const About = () => <div className="text-xl font-semibold">About</div>;
-const Works = () => <div className="text-xl font-semibold">Works</div>;
-const Contact = () => <div className="text-xl font-semibold">Contact</div>;
-const NotFound = () => <div className="text-xl font-semibold">404: Not Found</div>;
+
 // これより上のものはページに表示するもの
 //<NavLink>はaタグのようなものなので<NavLink>に挟まれているものはボタンとして表示する文字列
 //NavLinkはボタンが押されたらどこにいくかそして、どの状態にするのかを表しているもの対しRouterは遷移するためのルールを書いているもの
