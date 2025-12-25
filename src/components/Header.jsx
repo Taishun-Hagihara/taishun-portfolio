@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 
+// これより上のものはページに表示するもの
+//<NavLink>はaタグのようなものなので<NavLink>に挟まれているものはボタンとして表示する文字列
+//NavLinkはボタンが押されたらどこにいくかそして、どの状態にするのかを表しているもの対しRouterは遷移するためのルールを書いているもの
 export default function Header() {
     const base =
         "inline-flex items-center rounded-lg border px-3 py-2 text-sm font-medium transition";
@@ -14,6 +17,7 @@ export default function Header() {
                     end
                     className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
                 >
+
                     Home
                 </NavLink>
 
@@ -41,3 +45,5 @@ export default function Header() {
         </header>
     );
 }
+
+

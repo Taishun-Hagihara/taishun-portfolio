@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "../components/Header";
+import Header from "../components/Header.jsx";
+import Router from "../Router";
 
 // 画像を import（ViteならこれでOK）
 import bgHome from "../assets/bg-home.jpg";
