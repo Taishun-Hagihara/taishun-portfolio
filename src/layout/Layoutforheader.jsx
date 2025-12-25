@@ -1,10 +1,10 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx"
 
 
 
-
-export default function Layout() {
+export default function Layoutforheader() {
 
     return (
         <div className="min-h-screen relative">
@@ -12,6 +12,7 @@ export default function Layout() {
             <main className="relative z-10 mx-auto max-w-4xl p-6">
                 <Outlet />
             </main>
+            <Footer />
         </div>
     );
 }

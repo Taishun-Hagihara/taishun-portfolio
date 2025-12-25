@@ -1,19 +1,19 @@
-import { BrowserRouter, Routes, Route, NavLink, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
-import Layout from "./layout/Layoutforheader";
+import Layoutforheader from "./layout/Layoutforheader";
 // 各ページ
 
 
 //<Outlet>は下記のrouteに従って表示する内容を出力するためのもの。例えばpath=aboutなら<About/>を表示するといった感じ。
 //そしてこのoutletはRoute内でしか機能しない
-export default function Router() {
+export default function Routerforheader() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
+        <Route element={<Layoutforheader />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="works" element={<Works />} />
