@@ -10,7 +10,7 @@ export default function Footer() {
     const active = "border-blue-700 bg-blue-700 text-white";
 
     return (
-        <header className="border-t border-slate-200 px-4 py-3 flex justify-end">
+        <header className="border-t border-slate-200 px-4 py-3 flex justify-start">
             <nav className="flex gap-3">
                 <NavLink
                     to="/"
