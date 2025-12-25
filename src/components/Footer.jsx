@@ -10,7 +10,7 @@ export default function Footer() {
     const active = "border-blue-700 bg-blue-700 text-white";
 
     return (
-        <header className="border-t border-slate-200 px-4 py-3 flex justify-start">
+        <footer className="border-t border-slate-200 px-4 py-3 flex justify-start">
             <nav className="flex gap-3">
                 <NavLink
                     to="/"
@@ -42,7 +42,8 @@ export default function Footer() {
                     Contact
                 </NavLink>
             </nav>
-        </header>
+            <p>依頼はこちらから<span className="text-blue-700">。</span></p>
+        </footer>
     );
 }
 
