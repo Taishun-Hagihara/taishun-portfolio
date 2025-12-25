@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
-import Layout from "./layout/Layout";
+import Layout from "./layout/Layoutforheader";
 // 各ページ
 
 
@@ -18,7 +18,6 @@ export default function Router() {
           <Route path="about" element={<About />} />
           <Route path="works" element={<Works />} />
           <Route path="contact" element={<Contact />} />
-          
         </Route>
       </Routes>
     </BrowserRouter>
