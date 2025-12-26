@@ -10,7 +10,7 @@ export default function Header() {
     const active = "border-blue-700 bg-blue-700 text-white";
 
     return (
-        <header className="border-b border-slate-200 px-4 py-3 flex justify-end">
+        <header className=" border-slate-200 px-4 py-3 flex justify-end">
             <nav className="flex gap-3">
                 <NavLink
                     to="/"
