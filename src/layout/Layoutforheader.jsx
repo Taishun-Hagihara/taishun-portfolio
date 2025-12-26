@@ -16,7 +16,10 @@ export default function Layoutforheader() {
                 <div className="w-10/11 mx-auto">
                     <Footer />
                     <p className="mt-12 text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
-                    <Contact />
+                    <div className="flex items-center">
+                        <Contact className=" flex-1"/>
+                        <p className="text-zinc-500 ml-auto">2025 made by Taishun</p>
+                    </div>
                 </div>
             </div>
         </div>
