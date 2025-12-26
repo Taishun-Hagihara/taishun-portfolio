@@ -13,7 +13,7 @@ export default function Layoutforheader() {
                 <Outlet />
             </main>
             <Footer />
-            <p>依頼はこちらから<span className="text-blue-700">。</span></p>
+            <p className="text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
             <Contact />
         </div>
     );
