@@ -12,9 +12,13 @@ export default function Layoutforheader() {
             <main className="relative z-10 mx-auto max-w-4xl p-6">
                 <Outlet />
             </main>
-            <Footer />
-            <p className="text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
-            <Contact />
+            <div className="border-t border-slate-200">
+                <div className="w-10/11 mx-auto">
+                    <Footer />
+                    <p className="mt-12 text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
+                    <Contact />
+                </div>
+            </div>
         </div>
     );
 }
