@@ -42,7 +42,8 @@ export default function Footer() {
                     Contact
                 </NavLink>
             </nav>
-            <p>依頼はこちらから<span className="text-blue-700">。</span></p>
+            
+
         </footer>
     );
 }

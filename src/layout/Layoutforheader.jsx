@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx"
-
+import Contact from "../components/Contact.jsx"
 
 
 export default function Layoutforheader() {
@@ -13,6 +13,8 @@ export default function Layoutforheader() {
                 <Outlet />
             </main>
             <Footer />
+            <p>依頼はこちらから<span className="text-blue-700">。</span></p>
+            <Contact />
         </div>
     );
 }
