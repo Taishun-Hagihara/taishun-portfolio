@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import SocialLinks from "./SocialLinks";
 
 // これより上のものはページに表示するもの
 //<NavLink>はaタグのようなものなので<NavLink>に挟まれているものはボタンとして表示する文字列
@@ -10,41 +11,44 @@ export default function Footer() {
     const active = "border-blue-700 bg-blue-700 text-white";
 
     return (
-        <footer className="px-4 py-3 flex justify-start">
-            <nav className="flex gap-3">
-                <NavLink
-                    to="/"
-                    end
-                    className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
-                >
+        <div className="flex items-center w-full">
+            <footer className="px-4 py-3 flex justify-start flex-1">
+                <nav className="flex gap-3">
+                    <NavLink
+                        to="/"
+                        end
+                        className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
+                    >
 
-                    Home
-                </NavLink>
+                        Home
+                    </NavLink>
 
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
-                >
-                    About
-                </NavLink>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
+                    >
+                        About
+                    </NavLink>
 
-                <NavLink
-                    to="/works"
-                    className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
-                >
-                    Works
-                </NavLink>
+                    <NavLink
+                        to="/works"
+                        className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
+                    >
+                        Works
+                    </NavLink>
 
-                <NavLink
-                    to="/contact"
-                    className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
-                >
-                    Contact
-                </NavLink>
-            </nav>
-            
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) => `${base} ${isActive ? active : inactive}`}
+                    >
+                        Contact
+                    </NavLink>
+                </nav>
 
-        </footer>
+
+
+            </footer>
+            <SocialLinks className="ml-auto" />
+        </div>
     );
 }
-
