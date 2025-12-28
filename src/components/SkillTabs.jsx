@@ -13,7 +13,7 @@ export default function SkillsTabs() {
             { label: "Tools", items: ["Git", "GitHub"] },
             {
                 label: "Soft Skills",
-                items: ["Communication", "Collaboration", "Leadership"],
+                items: ["Leadership", "Ownership / Initiative", "Continuous Learning","Communication","Cross-cultural Understanding & Relationship Building"],
             },
         ],
         []
@@ -39,7 +39,7 @@ export default function SkillsTabs() {
     const active = sections[activeIndex];
 
     return (
-        <section className="mt-16 w-11/12 mx-auto h-100">
+        <section className="mt-16 w-11/12 mx-auto h-110">
             <h1 className="font-bold text-6xl">
                 Skills<span className="text-blue-700">.</span>
             </h1>

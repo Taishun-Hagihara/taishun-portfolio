@@ -18,7 +18,7 @@ export default function Layoutforheader() {
                     <p className="mt-12 text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
                     <div className="flex items-center">
                         <Contact className=" flex-1"/>
-                        <p className="text-zinc-500 ml-auto">2025 made by Taishun</p>
+                        <p className="text-zinc-500 ml-auto"><span className="text-blue-700">2025 </span>made by 萩原大竣</p>
                     </div>
                 </div>
             </div>
