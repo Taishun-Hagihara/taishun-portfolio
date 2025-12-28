@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Contact () {
     return(
-        <div className=" border-slate-200 px-4 py-3 flex justify-start">
+        <div className=" border-slate-200 px-4 py-3 flex justify-start ">
             <nav className="">
                 <NavLink 
                     to="/contact"

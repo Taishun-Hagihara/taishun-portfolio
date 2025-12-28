@@ -6,7 +6,7 @@ import Contact from "./Contact.jsx";
 export default function Home() {
     return (
         <div>
-            <header className="mt-15 h-80">
+            <header className="mt-15 h-125">
                 <div>
                     <h1 className="text-neutral-800 text-8xl w-10/11 mx-auto font-bold mt-30">Tai<span className="text-blue-700">shun</span></h1>
                     <h1 className="text-neutral-800 text-8xl w-10/11 mx-auto font-bold">Hagihara</h1>
