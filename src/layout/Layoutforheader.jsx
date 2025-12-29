@@ -9,16 +9,16 @@ export default function Layoutforheader() {
     return (
         <div className="min-h-screen relative">
             <Header />
-            <main className="relative z-10 mx-auto  p-6">
+            <main className="relative z-10 mx-auto p-4 sm:p-6">
                 <Outlet />
             </main>
             <div className="border-t border-slate-200">
                 <div className="w-10/11 mx-auto">
                     <Footer />
                     <p className="mt-12 text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
-                    <div className="flex items-center">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                         <Contact className=" flex-1"/>
-                        <p className="text-zinc-500 ml-auto"><span className="text-blue-700">2025 </span>made by 萩原大竣</p>
+                        <p className="text-zinc-500 sm:ml-auto"><span className="text-blue-700">2025 </span>made by 萩原大竣</p>
                     </div>
                 </div>
             </div>

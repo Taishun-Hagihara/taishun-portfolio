@@ -11,9 +11,9 @@ export default function Footer() {
     const active = "border-blue-700 bg-blue-700 text-white";
 
     return (
-        <div className="flex items-center w-full">
+        <div className="flex flex-col items-start gap-3 w-full sm:flex-row sm:items-center">
             <footer className="px-4 py-3 flex justify-start flex-1">
-                <nav className="flex gap-3">
+                <nav className="flex flex-wrap gap-2 sm:gap-3">
                     <NavLink
                         to="/"
                         end
@@ -48,7 +48,9 @@ export default function Footer() {
 
 
             </footer>
-            <SocialLinks className="ml-auto" />
+            <div className="sm:ml-auto">
+                <SocialLinks className="ml-auto" />
+            </div>
         </div>
     );
 }
