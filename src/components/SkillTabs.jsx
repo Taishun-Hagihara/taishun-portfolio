@@ -5,11 +5,11 @@ export default function SkillsTabs() {
         () => [
             {
                 label: "Frontend",
-                items: ["JavaScript (ES6+)", "React", "HTML/CSS", "Tailwind CSS"],
+                items: ["JavaScript (ES6+)", "React", "HTML/CSS", "Tailwind CSS","VIte"],
             },
-            { label: "Backend", items: ["Node.js", "Express", "REST APIs"] },
-            { label: "Database", items: ["Supabase (or MongoDB)"] },
-            { label: "Cloud", items: ["AWS (deploying projects with S3/CloudFront)"] },
+            { label: "Backend", items: ["Node.js(learning)"] },
+            { label: "Database", items: ["Supabase"] },
+            { label: "Cloud", items: ["AWS (deploying projects with S3/CloudFront/Route53/ACM)"] },
             { label: "Tools", items: ["Git", "GitHub"] },
             {
                 label: "Soft Skills",
