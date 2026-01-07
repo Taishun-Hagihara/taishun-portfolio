@@ -1,16 +1,80 @@
-# React + Vite
+# Taishun Portfolio Website（公開サイト）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**本番URL**：https://taishun-portfolio.com
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 初めに
+本リポジトリは、私の **ポートフォリオWebサイト** です。  
+学習・開発してきた内容（React / Tailwindcss / AWSデプロイ /Git・GitHub など）を、応募先の採用担当者が短時間で理解できるように整理する目的で制作しました。
 
-## React Compiler
+作品（Projects）だけでなく、私の背景（大学・活動）や、学習方針・強みが伝わる構成を意識しています。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## コンセプト
+- **初見でも30秒で「何ができる人か」が伝わるポートフォリオ**
+- **作品は “作った” で終わらせず、工夫・学び・再現性が分かる見せ方にする**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 概要
+### 公開ページ
+- Home：キャッチコピー / 現在の取り組み
+- About：所属・興味領域・強み（簡潔に）
+- Projects / Works：制作物をカード形式で掲載（Demo / GitHub への導線）
+- Contact：連絡先（メール / SNS / GitHub など）
+
+### 主なUI/機能
+- レスポンシブ対応（PC / Mobile）
+- Reactによるルーティング
+- ライブラリ使用によるInstagram、GitHubのボタン
+  
+
+---
+
+## デモ画像
+- Home
+- About
+- Projects
+- Project Detail（あれば）
+- Contact
+
+（例）
+<!-- ![Home](docs/home.png) -->
+<!-- ![Projects](docs/projects.png) -->
+
+---
+
+## 使用技術一覧
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- React Router
+
+
+### Infrastructure / Deploy
+- AWS S3（静的ホスティング）
+- AWS CloudFront
+- AWS Route 53（独自ドメイン）
+- AWS ACM（HTTPS証明書）
+
+### Tools
+- Git / GitHub
+
+---
+
+## 学んだこと
+- **ReactでのUI設計（コンポーネント分割 / props / state）** を実践し、見せたい情報を整理して実装できるようになりました。
+- **AWS（S3/CloudFront/Route53/ACM）での公開** を通して、フロントエンド開発とインフラのつながりを理解しました。
+- Git・GitHubを用いて開発するということを体験的に理解しました。
+
+---
+
+## 構成（アーキテクチャ）
+- Browser → **CloudFront** → **S3**（静的配信 / 独自ドメイン / HTTPS）
+- [任意] Browser → **External API**（作品でAPI連携している場合）
+
+---
+
