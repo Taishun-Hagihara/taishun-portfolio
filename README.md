@@ -21,9 +21,9 @@
 ## 概要
 ### 公開ページ
 - Home：キャッチコピー / 現在の取り組み
-- About：所属・興味領域・強み（簡潔に）
-- Projects / Works：制作物をカード形式で掲載（Demo / GitHub への導線）
-- Contact：連絡先（メール / SNS / GitHub など）
+- About：所属・興味領域・強み
+- Projects / Works：制作物を掲載（Demo / GitHub への導線）
+- Contact：連絡先（メール / Instagram / GitHub など）
 
 ### 主なUI/機能
 - レスポンシブ対応（PC / Mobile）
@@ -40,7 +40,6 @@
 - Project Detail（あれば）
 - Contact
 
-（例）
 <!-- ![Home](docs/home.png) -->
 <!-- ![Projects](docs/projects.png) -->
 
@@ -74,7 +73,6 @@
 
 ## 構成（アーキテクチャ）
 - Browser → **CloudFront** → **S3**（静的配信 / 独自ドメイン / HTTPS）
-- [任意] Browser → **External API**（作品でAPI連携している場合）
 
 ---
 
