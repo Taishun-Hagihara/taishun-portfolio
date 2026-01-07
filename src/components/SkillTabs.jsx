@@ -39,21 +39,21 @@ export default function SkillsTabs() {
     const active = sections[activeIndex];
 
     return (
-        <section className="mt-16 w-11/12 mx-auto h-auto sm:h-110">
-            <h1 className="font-bold text-6xl">
+        <section className="mt-12 sm:mt-16 w-11/12 mx-auto h-auto sm:h-110">
+            <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl">
                 Skills<span className="text-blue-700">.</span>
             </h1>
 
             {/* タブ（横並び） */}
             <div className="mt-5">
-                <div className="relative border-b border-slate-200">
+                <div className="relative border-b border-slate-200 overflow-x-auto">
                     {/* 青い下線（動く） */}
                     <div
                         className="absolute bottom-0 h-1 bg-blue-700 transition-all duration-300"
                         style={{ left: indicator.left, width: indicator.width }}
                     />
 
-                    <div className="flex gap-6">
+                    <div className="flex gap-4 sm:gap-6 min-w-max">
                         {sections.map((s, idx) => {
                             const isActive = idx === activeIndex;
                             return (
@@ -62,7 +62,7 @@ export default function SkillsTabs() {
                                     ref={(node) => (tabRefs.current[idx] = node)}
                                     type="button"
                                     className={[
-                                        "py-4 font-semibold transition-colors",
+                                        "py-3 sm:py-4 text-sm sm:text-base font-semibold transition-colors whitespace-nowrap",
                                         isActive
                                             ? "text-blue-700"
                                             : "text-slate-500 hover:text-slate-900",
@@ -78,9 +78,9 @@ export default function SkillsTabs() {
 
                 {/* 内容（タブの下） */}
                 <div className="pt-6">
-                    <h3 className="text-xl font-bold text-slate-900">{active.label}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900">{active.label}</h3>
 
-                    <ul className="mt-6 space-y-4 text-slate-700">
+                    <ul className="mt-4 sm:mt-6 space-y-3 sm:space-y-4 text-slate-700 text-sm sm:text-base">
                         {active.items.map((text) => (
                             <li key={text} className="flex gap-3 leading-relaxed">
                                 <span className="mt-0.5 text-blue-700">✓</span>
