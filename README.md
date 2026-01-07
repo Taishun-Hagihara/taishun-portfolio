@@ -37,7 +37,7 @@
 - Home
 - About
 - Projects
-- Project Detail（あれば）
+- Project Detail
 - Contact
 
 <!-- ![Home](docs/home.png) -->
