@@ -20,8 +20,8 @@
 
 ## 概要
 ### 公開ページ
-- Home：キャッチコピー / 現在の取り組み
-- About：所属・興味領域・強み
+- Home：それぞれのページの要約
+- About：私について(エンジニアとしての経験がないため情報が少ない / 今後更新予定)
 - Projects / Works：制作物を掲載（Demo / GitHub への導線）
 - Contact：連絡先（メール / Instagram / GitHub など）
 
