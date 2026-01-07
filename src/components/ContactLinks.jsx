@@ -1,4 +1,5 @@
 import { Mail, Instagram} from "lucide-react";
+import SocialLinks from "../components/SocialLinks";
 
 const ContactLink = () => {
     return (
