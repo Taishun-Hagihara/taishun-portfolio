@@ -34,14 +34,8 @@
 ---
 
 ## デモ画像
-- Home
-- About
-- Projects
-- Project Detail
-- Contact
+(準備中)
 
-<!-- ![Home](docs/home.png) -->
-<!-- ![Projects](docs/projects.png) -->
 
 ---
 
