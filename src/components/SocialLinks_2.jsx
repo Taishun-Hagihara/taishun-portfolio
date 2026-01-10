@@ -3,7 +3,7 @@ import { Instagram,  Github,  Mail} from "lucide-react";
 const SOCIALS = [
     { href: "https://www.instagram.com/tais_.ha/", label: "Instagram", Icon: Instagram ,data:"tais_.ha"},
     { href: "https://github.com/Taishun-Hagihara", label: "GitHub", Icon: Github ,data:"Taishun-Hagihara"},
-    { href: "https://mail.google.com/", label: "Mail", Icon: Mail ,data:"hagitaishun@gmail.com"}
+    { href: "", label: "Mail", Icon: Mail ,data:"hagitaishun@gmail.com"}
     
 ];
 
