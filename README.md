@@ -22,7 +22,7 @@
 ### 公開ページ
 - Home：それぞれのページの要約
 - About：私について(エンジニアとしての経験がないため情報が少ない / 今後更新予定)
-- Projects / Works：制作物を掲載（Demo / GitHub への導線）
+- Projects / Works：制作物を掲載（Demo / GitHub への導線）(最新のものとして、talkmatesのサイトを作成したので掲載予定です。現在掲載物なし)
 - Contact：連絡先（メール / Instagram / GitHub など）
 
 ### 主なUI/機能
