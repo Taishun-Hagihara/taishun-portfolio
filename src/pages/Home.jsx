@@ -1,6 +1,5 @@
-import ContactLink from "../components/ContactLinks";
+
 import SkillsTabs from "../components/SkillTabs.jsx";
-import Contact from "./Contact.jsx";
 
 
 export default function Home() {
