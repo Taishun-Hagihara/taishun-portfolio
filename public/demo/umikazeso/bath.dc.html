@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載内容はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;height:340px;overflow:hidden;">
+    <image-slot id="bath-hero" shape="rect" placeholder="大浴場の写真" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot>
+    <div style="position:absolute;inset:0;background:rgba(15,25,20,.42);"></div>
+    <div style="position:absolute;left:64px;bottom:44px;color:#F7F5EF;">
+      <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">BATH</div>
+      <h1 style="font-family:'Noto Serif JP',serif;font-size:36px;margin:0;">大浴場</h1>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:64px 48px 24px;">
+    <div class="row"><span>浴場</span><span>男女別大浴場（各1か所）</span></div>
+    <div class="row"><span>温泉かどうか</span><span>天然温泉ではありません</span></div>
+    <div class="row"><span>同時利用目安</span><span>男性浴場・女性浴場ともに約10名</span></div>
+    <div class="row"><span>利用時間</span><span>16:00〜24:00／6:00〜9:00</span></div>
+    <div class="row" style="border-bottom:none;"><span>団体利用時</span><span>人数が多い場合、男女別・グループ別に時間を分けて対応可能</span></div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:24px 48px 56px;">
+    <image-slot id="bath-sub" shape="rounded" radius="4" placeholder="浴場設備の写真" style="width:100%;height:300px;"></image-slot>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;">
+      <div>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 16px;">浴場設備</h2>
+        <div class="row"><span>シャンプー・コンディショナー</span><span>あり</span></div>
+        <div class="row"><span>ボディソープ・洗顔料</span><span>あり</span></div>
+        <div class="row" style="border-bottom:none;"><span>ドライヤー</span><span>あり</span></div>
+      </div>
+      <div>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 16px;">客室アメニティ</h2>
+        <div class="row"><span>フェイスタオル・バスタオル</span><span>宿泊料金に含む</span></div>
+        <div class="row"><span>歯ブラシ・浴衣・スリッパ</span><span>宿泊料金に含む</span></div>
+        <div class="row"><span>追加バスタオル</span><span>200円</span></div>
+        <div class="row"><span>追加フェイスタオル</span><span>100円</span></div>
+        <div class="row" style="border-bottom:none;"><span>髭剃り・ヘアブラシ</span><span>フロントにて無料</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

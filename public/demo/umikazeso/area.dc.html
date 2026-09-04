@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載内容はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px 24px;">
+    <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">AROUND THE AREA</div>
+    <h1 style="font-family:'Noto Serif JP',serif;font-size:32px;color:#1F3B2E;margin:0 0 16px;">周辺施設・観光</h1>
+    <p style="font-size:14.5px;color:#4a463c;line-height:1.9;max-width:760px;">団体利用の団体様にも便利な、体育館・グラウンドなどのスポーツ施設から、海水浴場・観光施設まで。徒歩・車での所要時間と送迎対応の可否をまとめています。</p>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:8px 48px 24px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:24px 0 12px;">スポーツ・アウトドア施設</h2>
+    <div class="row"><span>松風体育館</span><span>車5分／送迎可能</span></div>
+    <div class="row"><span>海浜総合グラウンド</span><span>車7分／送迎可能</span></div>
+    <div class="row"><span>市営テニスコート</span><span>車8分／送迎は要相談</span></div>
+    <div class="row" style="border-bottom:none;"><span>海水浴場</span><span>徒歩8分</span></div>
+
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:32px 0 12px;">生活施設</h2>
+    <div class="row"><span>コンビニ</span><span>徒歩7分</span></div>
+    <div class="row"><span>スーパー</span><span>車8分</span></div>
+    <div class="row"><span>ドラッグストア</span><span>車10分</span></div>
+    <div class="row" style="border-bottom:none;"><span>総合病院</span><span>車15分</span></div>
+
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:32px 0 12px;">駅・観光</h2>
+    <div class="row"><span>南海和歌山港駅</span><span>車10分</span></div>
+    <div class="row"><span>JR和歌山駅</span><span>車20分</span></div>
+    <div class="row"><span>和歌山城</span><span>車20分</span></div>
+    <div class="row" style="border-bottom:none;"><span>和歌山マリーナシティ</span><span>車25分</span></div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:16px 48px 56px;">
+    <image-slot id="area-photo" shape="rounded" radius="4" placeholder="海水浴場・周辺観光の写真" style="width:100%;height:300px;"></image-slot>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

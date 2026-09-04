@@ -1,14 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Works from "./pages/Works";
-import Contact from "./pages/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layoutforheader from "./layout/Layoutforheader";
-// 各ページ
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Service from "./pages/Service";
+import ServiceAbout from "./pages/ServiceAbout";
+import Works from "./pages/Works";
 
-
-//<Outlet>は下記のrouteに従って表示する内容を出力するためのもの。例えばpath=aboutなら<About/>を表示するといった感じ。
-//そしてこのoutletはRoute内でしか機能しない
 export default function Routerforheader() {
   return (
     <BrowserRouter>
@@ -17,11 +15,11 @@ export default function Routerforheader() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="works" element={<Works />} />
+          <Route path="service" element={<Service />} />
+          <Route path="service/about-me" element={<ServiceAbout />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-//<Route element={Layout}>とあるがここのLayoutは上の関数である。そして、route path=....によって成立した条件がLayoutのOutletに入る
-//結果的にlayoutの要素として配置される。体感childrenみたいな感じやな

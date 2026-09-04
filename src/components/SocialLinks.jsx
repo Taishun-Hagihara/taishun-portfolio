@@ -1,4 +1,5 @@
 import { Instagram,  Github,  } from "lucide-react";
+import { createElement } from "react";
 
 const SOCIALS = [
     { href: "https://www.instagram.com/tais_.ha/", label: "Instagram", Icon: Instagram },
@@ -20,7 +21,7 @@ export default function SocialLinks() {
                             className="inline-flex items-center justify-center p-2 rounded-lg text-slate-500 transition hover:text-blue-700 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700"
                         >
                             
-                            <Icon className="h-7 w-7" strokeWidth={1.8} />
+                            {createElement(Icon, { className: "h-7 w-7", strokeWidth: 1.8 })}
                         </a>
                     </li>
                 ))}

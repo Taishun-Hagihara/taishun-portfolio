@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載内容はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;height:340px;overflow:hidden;">
+    <image-slot id="bbq-hero" shape="rect" placeholder="BBQ・宴会の写真" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot>
+    <div style="position:absolute;inset:0;background:rgba(15,25,20,.42);"></div>
+    <div style="position:absolute;left:64px;bottom:44px;color:#F7F5EF;">
+      <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">BBQ / PARTY</div>
+      <h1 style="font-family:'Noto Serif JP',serif;font-size:36px;margin:0;">BBQ・宴会・交流会</h1>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:64px 48px 24px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">BBQ</h2>
+    <div class="row"><span>料金</span><span>通常夕食から+1,500円／人</span></div>
+    <div class="row"><span>場所</span><span>旅館屋外BBQスペース</span></div>
+    <div class="row"><span>最大人数</span><span>60名</span></div>
+    <div class="row"><span>利用時間</span><span>17:00〜21:00（最終開始19:00）</span></div>
+    <div class="row"><span>雨天時</span><span>屋根付きスペースで対応</span></div>
+    <div class="row"><span>荒天時</span><span>BBQ中止の場合あり（館内夕食へ変更）</span></div>
+    <div class="row"><span>設備（料金に含む）</span><span>コンロ・網・炭・トング・皿・割り箸</span></div>
+    <div class="row"><span>食材</span><span>旅館側で用意（追加食材の持ち込みは事前相談）</span></div>
+    <div class="row"><span>飲み物・酒類の持ち込み</span><span>可能／持込料無料</span></div>
+    <div class="row" style="border-bottom:none;"><span>終了後</span><span>使用済み食器は指定場所へ・炭処理は旅館側が対応</span></div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:0 48px 56px;">
+    <image-slot id="bbq-photo" shape="rounded" radius="4" placeholder="BBQスペースの写真" style="width:100%;height:300px;"></image-slot>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">花火</h2>
+      <div class="row"><span>手持ち花火</span><span>可能</span></div>
+      <div class="row"><span>打ち上げ花火・ロケット花火・爆竹</span><span>不可</span></div>
+      <div class="row"><span>利用場所</span><span>旅館指定の屋外スペース</span></div>
+      <div class="row"><span>利用時間</span><span>20:00〜21:00</span></div>
+      <div class="row"><span>バケツ・水</span><span>旅館側で用意（無料貸出）</span></div>
+      <div class="row"><span>終了後</span><span>完全消火のうえ指定ゴミ箱へ（花火ゴミは旅館側で処分可）</span></div>
+      <div class="row" style="border-bottom:none;"><span>荒天時</span><span>不可</span></div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">宴会・持ち込み・冷蔵庫</h2>
+    <div class="row"><span>食べ物・飲み物・酒類の持ち込み</span><span>すべて可能</span></div>
+    <div class="row"><span>持込料</span><span>無料</span></div>
+    <div class="row"><span>客室冷蔵庫</span><span>各部屋にあり（無料）</span></div>
+    <div class="row"><span>団体用冷蔵庫</span><span>大広間付近に1台（無料）</span></div>
+    <div class="row"><span>氷</span><span>フロントで提供（1袋300円）</span></div>
+    <div class="row" style="border-bottom:none;"><span>製氷機</span><span>宿泊客が直接利用できる製氷機はありません</span></div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">利用時間・門限・片付け</h2>
+      <div class="row"><span>大広間利用時間</span><span>7:00〜24:00</span></div>
+      <div class="row"><span>通常宿泊時</span><span>24:00以降は静粛時間</span></div>
+      <div class="row"><span>全館貸切時</span><span>翌2:00まで大広間利用可能</span></div>
+      <div class="row"><span>禁止事項</span><span>大音量の音楽・屋外での騒音・危険行為</span></div>
+      <div class="row"><span>門限</span><span>24:00（事前相談があれば代表者管理のもと延長可能）</span></div>
+      <div class="row"><span>客室の消灯</span><span>強制消灯なし／静粛時間は24:00〜7:00</span></div>
+      <div class="row"><span>後片付け</span><span>ゴミは分別、テーブル上を簡単に整理、瓶・缶・ペットボトルは指定場所へ</span></div>
+      <div class="row" style="border-bottom:none;"><span>旅館指定ゴミ袋</span><span>1枚100円（大量の持ち込みゴミ用）</span></div>
+    </div>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

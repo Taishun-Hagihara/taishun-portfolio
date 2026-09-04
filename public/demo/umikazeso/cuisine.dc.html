@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載内容はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html" style="color:#1F3B2E;font-weight:700;">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;height:340px;overflow:hidden;">
+    <image-slot id="cuisine-hero" shape="rect" placeholder="会席料理の写真" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot>
+    <div style="position:absolute;inset:0;background:rgba(15,25,20,.42);"></div>
+    <div style="position:absolute;left:64px;bottom:44px;color:#F7F5EF;">
+      <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">CUISINE</div>
+      <h1 style="font-family:'Noto Serif JP',serif;font-size:36px;margin:0;">お料理</h1>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:64px 48px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;">
+    <div>
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 16px;">夕食</h2>
+      <div class="row"><span>時間</span><span>18:00〜20:00（18:00または18:30開始）</span></div>
+      <div class="row"><span>一般</span><span>和食会席</span></div>
+      <div class="row"><span>学生団体</span><span>ボリューム重視の団体食</span></div>
+      <div class="row" style="border-bottom:none;"><span>BBQへの変更</span><span>可能（+1,500円／人）</span></div>
+    </div>
+    <div>
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 16px;">朝食</h2>
+      <div class="row"><span>時間</span><span>7:00〜9:00</span></div>
+      <div class="row"><span>内容</span><span>和朝食</span></div>
+      <div class="row" style="border-bottom:none;"><span>会場</span><span>大広間または食事会場</span></div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:24px 48px;image-slot:0;">
+    <image-slot id="cuisine-set" shape="rounded" radius="4" placeholder="会席料理の並んだ写真" style="width:100%;height:320px;"></image-slot>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">食事会場</h2>
+    <div class="row"><span>会場</span><span>大広間（68畳）または食事会場</span></div>
+    <div class="row"><span>一度に利用できる人数</span><span>最大60名</span></div>
+    <div class="row" style="border-bottom:none;"><span>60名を超える場合</span><span>2会場、または時間を分けて対応（二部制）</span></div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">お弁当</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div style="background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:24px;">
+          <div style="font-family:'Noto Serif JP',serif;font-size:18px;color:#1F3B2E;margin-bottom:10px;">通常弁当</div>
+          <div style="font-size:22px;color:#1F3B2E;font-family:'Noto Serif JP',serif;">800円</div>
+          <div style="font-size:13px;color:#8a8577;margin-top:10px;">受取：朝または昼</div>
+        </div>
+        <div style="background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:24px;">
+          <div style="font-family:'Noto Serif JP',serif;font-size:18px;color:#1F3B2E;margin-bottom:10px;">スポーツ合宿向け弁当</div>
+          <div style="font-size:22px;color:#1F3B2E;font-family:'Noto Serif JP',serif;">1,000円</div>
+          <div style="font-size:13px;color:#8a8577;margin-top:10px;">ボリューム重視の内容です</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">アレルギー・ベジタリアン・宗教上の食事対応</h2>
+    <div class="row"><span>アレルギー対応</span><span>可能な範囲で対応（保証はできません）</span></div>
+    <div class="row"><span>申告期限</span><span>宿泊7日前まで</span></div>
+    <div class="row"><span>対応料金</span><span>基本無料（特殊食材が必要な場合は追加料金の可能性あり）</span></div>
+    <div class="row"><span>調理場</span><span>共通調理場のため、微量混入を完全には防止できません</span></div>
+    <div class="row"><span>ベジタリアン</span><span>対応可能（7日前まで申告）</span></div>
+    <div class="row"><span>ヴィーガン</span><span>内容により対応可能</span></div>
+    <div class="row"><span>ハラール</span><span>ハラール認証施設ではありません</span></div>
+    <div class="row"><span>豚肉・アルコール不使用への変更</span><span>可能な範囲で対応</span></div>
+    <div class="row"><span>肉料理⇄魚料理の変更</span><span>可能</span></div>
+    <div class="row" style="border-bottom:none;"><span>特殊食材が必要な場合</span><span>別途お見積り</span></div>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

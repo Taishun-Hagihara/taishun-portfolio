@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;color:#2B2B2B;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載の名称・所在地・料金・定員等はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;letter-spacing:.02em;">紀州 海風荘</div>
+        <div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div>
+      </div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;height:640px;overflow:hidden;">
+    <image-slot id="hero-top" shape="rect" placeholder="旅館外観・夜景の写真" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot>
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,25,20,.62),rgba(15,25,20,.18) 60%);"></div>
+    <div style="position:absolute;left:64px;bottom:64px;max-width:640px;color:#F7F5EF;">
+      <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:14px;">和歌山・海辺の宿</div>
+      <h1 style="font-family:'Noto Serif JP',serif;font-size:46px;line-height:1.5;margin:0 0 20px;font-weight:600;">静けさに、<br>ほどける滞在。</h1>
+      <p style="font-size:15px;line-height:1.9;margin:0 0 28px;opacity:.92;">ご家族・ご夫婦・ご友人の旅から、学生サークル・部活・社員旅行まで。<br>最大70名、全館貸切にも対応する海辺の旅館です。</p>
+      <div style="display:flex;gap:14px;">
+        <a href="plans.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">宿泊プランを見る →</a>
+        <a href="group.dc.html" style="background:transparent;border:1px solid #F7F5EF;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">団体・合宿の方はこちら →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid #E5E2DB;">
+    <div style="text-align:center;padding:26px 10px;border-right:1px solid #E5E2DB;">
+      <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;">70名</div>
+      <div style="font-size:12px;color:#8a8577;margin-top:4px;">最大宿泊人数</div>
+    </div>
+    <div style="text-align:center;padding:26px 10px;border-right:1px solid #E5E2DB;">
+      <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;">15室</div>
+      <div style="font-size:12px;color:#8a8577;margin-top:4px;">客室数</div>
+    </div>
+    <div style="text-align:center;padding:26px 10px;border-right:1px solid #E5E2DB;">
+      <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;">40名〜</div>
+      <div style="font-size:12px;color:#8a8577;margin-top:4px;">全館貸切</div>
+    </div>
+    <div style="text-align:center;padding:26px 10px;border-right:1px solid #E5E2DB;">
+      <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;">送迎無料</div>
+      <div style="font-size:12px;color:#8a8577;margin-top:4px;">10名以上の団体</div>
+    </div>
+    <div style="text-align:center;padding:26px 10px;">
+      <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;">9,000円〜</div>
+      <div style="font-size:12px;color:#8a8577;margin-top:4px;">1泊2食（税込）</div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:96px 48px;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:44px;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:28px;color:#1F3B2E;margin:0;">海辺の四季を、味わう。</h2>
+      <a href="cuisine.dc.html" style="font-size:13.5px;">お料理について詳しく見る →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;">
+      <image-slot id="hero-cuisine" shape="rounded" radius="4" placeholder="会席料理の写真" style="width:100%;height:360px;"></image-slot>
+      <div>
+        <p style="font-size:15px;line-height:2;color:#4a463c;margin:0 0 24px;">旬の恵みを丁寧に仕立てた和食会席を中心に、学生団体向けにはボリュームを重視したメニューもご用意。夕食はBBQへの変更も可能です。</p>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #E5E2DB;font-size:14px;"><span style="color:#8a8577;">夕食</span><span>和食会席（学生団体食・BBQへ変更可）</span></div>
+          <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #E5E2DB;font-size:14px;"><span style="color:#8a8577;">アレルギー・宗教対応</span><span>可能な範囲で対応（7日前まで申告）</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#EFECE3;padding:96px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:28px;color:#1F3B2E;margin:0 0 44px;text-align:center;">お部屋・館内をご案内</h2>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;">
+        <a href="rooms.dc.html" style="background:#F7F5EF;border-radius:4px;overflow:hidden;display:block;">
+          <image-slot id="card-rooms" shape="rect" placeholder="客室の写真" style="width:100%;height:180px;"></image-slot>
+          <div style="padding:20px;">
+            <div style="font-family:'Noto Serif JP',serif;font-size:17px;color:#1F3B2E;margin-bottom:8px;">客室</div>
+            <div style="font-size:13px;color:#8a8577;">1〜12名まで、4タイプ全15室</div>
+          </div>
+        </a>
+        <a href="bath.dc.html" style="background:#F7F5EF;border-radius:4px;overflow:hidden;display:block;">
+          <image-slot id="card-bath" shape="rect" placeholder="大浴場の写真" style="width:100%;height:180px;"></image-slot>
+          <div style="padding:20px;">
+            <div style="font-family:'Noto Serif JP',serif;font-size:17px;color:#1F3B2E;margin-bottom:8px;">大浴場</div>
+            <div style="font-size:13px;color:#8a8577;">男女別／各10名目安</div>
+          </div>
+        </a>
+        <a href="facilities.dc.html" style="background:#F7F5EF;border-radius:4px;overflow:hidden;display:block;">
+          <image-slot id="card-facilities" shape="rect" placeholder="大広間・館内施設の写真" style="width:100%;height:180px;"></image-slot>
+          <div style="padding:20px;">
+            <div style="font-family:'Noto Serif JP',serif;font-size:17px;color:#1F3B2E;margin-bottom:8px;">館内施設</div>
+            <div style="font-size:13px;color:#8a8577;">大広間68畳・ランドリー等</div>
+          </div>
+        </a>
+        <a href="bbq.dc.html" style="background:#F7F5EF;border-radius:4px;overflow:hidden;display:block;">
+          <image-slot id="card-bbq" shape="rect" placeholder="BBQ・宴会の写真" style="width:100%;height:180px;"></image-slot>
+          <div style="padding:20px;">
+            <div style="font-family:'Noto Serif JP',serif;font-size:17px;color:#1F3B2E;margin-bottom:8px;">BBQ・宴会</div>
+            <div style="font-size:13px;color:#8a8577;">持ち込み自由・24時まで</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:96px 48px;display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;">
+    <div>
+      <div style="font-size:13px;letter-spacing:.1em;color:#C8A766;margin-bottom:10px;">FOR GROUPS</div>
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:28px;color:#1F3B2E;margin:0 0 20px;">サークル・合宿・社員旅行の幹事様へ</h2>
+      <p style="font-size:15px;line-height:2;color:#4a463c;margin:0 0 28px;">最大70名まで宿泊可能。大広間・BBQ・マイクロバス送迎・飲食物持ち込みなど、団体利用に必要な情報を料金までまとめて掲載しています。お電話の前にご確認いただけます。</p>
+      <a href="group.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">団体・合宿ページを見る →</a>
+    </div>
+    <image-slot id="hero-group" shape="rounded" radius="4" placeholder="大広間・団体利用の写真" style="width:100%;height:360px;"></image-slot>
+  </section>
+
+  <section style="background:#1F3B2E;color:#F7F5EF;padding:80px 48px;text-align:center;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:26px;margin:0 0 16px;">ご予約前に、まず自分たちで判断できるサイトです</h2>
+    <p style="font-size:14.5px;opacity:.85;line-height:1.9;margin:0 0 32px;max-width:640px;margin-left:auto;margin-right:auto;">人数・料金・送迎・キャンセル規定まで、電話でご確認いただく内容の多くをサイト内に掲載しています。</p>
+    <div style="display:flex;gap:14px;justify-content:center;">
+      <a href="plans.dc.html" style="background:#C8A766;color:#1F3B2E;padding:14px 26px;border-radius:3px;font-size:14px;">料金・プランを見る</a>
+      <a href="faq.dc.html" style="border:1px solid #F7F5EF;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">よくある質問を見る</a>
+    </div>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:64px 48px 28px;">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:40px;">
+      <div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:19px;margin-bottom:10px;">紀州 海風荘</div>
+        <p style="font-size:13px;line-height:1.9;opacity:.75;">〒640-0000 和歌山県和歌山市海辺町1-10<br>南海和歌山港駅より車・タクシー約10分</p>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#C8A766;margin-bottom:14px;letter-spacing:.05em;">サイトマップ</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;">
+          <a class="footlink" href="rooms.dc.html">客室</a>
+          <a class="footlink" href="cuisine.dc.html">お料理</a>
+          <a class="footlink" href="plans.dc.html">宿泊料金・プラン</a>
+          <a class="footlink" href="bath.dc.html">大浴場</a>
+          <a class="footlink" href="facilities.dc.html">館内施設</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#C8A766;margin-bottom:14px;letter-spacing:.05em;">団体・その他</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;">
+          <a class="footlink" href="group.dc.html">団体・合宿</a>
+          <a class="footlink" href="bbq.dc.html">BBQ・宴会・交流会</a>
+          <a class="footlink" href="access.dc.html">アクセス・送迎</a>
+          <a class="footlink" href="area.dc.html">周辺施設・観光</a>
+          <a class="footlink" href="cancel.dc.html">キャンセル・人数変更</a>
+          <a class="footlink" href="faq.dc.html">よくある質問</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#C8A766;margin-bottom:14px;letter-spacing:.05em;">お問い合わせ</div>
+        <div style="font-size:13px;line-height:2;opacity:.85;">
+          TEL 073-000-0000<br>
+          MAIL info@umikazeso-example.jp<br>
+          <a href="contact.dc.html" style="color:#C8A766;">予約・お問い合わせページ →</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1140px;margin:40px auto 0;border-top:1px solid rgba(247,245,239,.15);padding-top:20px;font-size:11.5px;opacity:.6;text-align:center;line-height:1.8;">
+      ※「紀州 海風荘」は本サイト制作用の架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータであり、実在の施設・団体とは一切関係ありません。<br>
+      © UMIKAZESO (fictional / demo site)
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

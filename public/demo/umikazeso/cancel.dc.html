@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  th,td{padding:12px 14px;border-bottom:1px solid #E5E2DB;text-align:left;}
+  th{background:#EFECE3;color:#1F3B2E;font-weight:700;font-size:13px;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載内容はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px 8px;">
+    <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">CANCELLATION</div>
+    <h1 style="font-family:'Noto Serif JP',serif;font-size:32px;color:#1F3B2E;margin:0 0 16px;">キャンセル・人数変更</h1>
+    <p style="font-size:14.5px;color:#4a463c;line-height:1.9;max-width:780px;">ご予約時の人数・区分によってキャンセル料の発生日が異なります。必ずご予約前にご確認ください。</p>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:24px 48px 16px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:0 0 14px;">個人・9名以下のキャンセル料</h2>
+    <table>
+      <tr><th>時期</th><th>キャンセル料率</th></tr>
+      <tr><td>7〜4日前</td><td>20%</td></tr>
+      <tr><td>3〜2日前</td><td>30%</td></tr>
+      <tr><td>前日</td><td>50%</td></tr>
+      <tr><td>当日</td><td>100%</td></tr>
+      <tr><td>無連絡</td><td>100%</td></tr>
+    </table>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:24px 48px 16px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:0 0 14px;">団体10名以上（団体全体をキャンセルする場合）</h2>
+    <table>
+      <tr><th>時期</th><th>キャンセル料率</th></tr>
+      <tr><td>30日前まで</td><td>無料</td></tr>
+      <tr><td>29〜8日前</td><td>10%</td></tr>
+      <tr><td>7〜2日前</td><td>30%</td></tr>
+      <tr><td>前日</td><td>50%</td></tr>
+      <tr><td>当日</td><td>100%</td></tr>
+      <tr><td>無連絡</td><td>100%</td></tr>
+    </table>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:0 0 14px;">団体で一部人数だけ減る場合</h2>
+      <table style="background:#fff;">
+        <tr><th>時期</th><th>キャンセル料率（減った人数分）</th></tr>
+        <tr><td>7日前まで</td><td>無料</td></tr>
+        <tr><td>6〜2日前</td><td>30%</td></tr>
+        <tr><td>前日</td><td>50%</td></tr>
+        <tr><td>当日</td><td>100%</td></tr>
+      </table>
+      <div style="background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:24px;margin-top:20px;font-size:14px;line-height:1.9;color:#4a463c;">
+        <b style="color:#1F3B2E;">具体例：</b>30名で予約 → 宿泊5日前に28名へ変更。減少した2名分について、上表の団体人数変更規定（6〜2日前：30%）が適用されます。
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:0 0 20px;">確定期限</h2>
+    <div class="row"><span>最終人数確定</span><span>宿泊7日前</span></div>
+    <div class="row"><span>部屋割り確定</span><span>宿泊3日前</span></div>
+    <div class="row"><span>食事制限確定</span><span>宿泊7日前</span></div>
+    <div class="row" style="border-bottom:none;"><span>当日欠席</span><span>欠席者分の宿泊料金100%</span></div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;margin:0 0 20px;">予約金</h2>
+      <div class="row" style="background:transparent;"><span>通常予約</span><span>不要</span></div>
+      <div class="row"><span>40名以上の団体または全館貸切</span><span>予約金50,000円</span></div>
+      <div class="row"><span>支払期限</span><span>予約確定後7日以内</span></div>
+      <div class="row"><span>用途</span><span>宿泊代金へ全額充当</span></div>
+      <div class="row"><span>無料キャンセル期間内の取消</span><span>全額返金</span></div>
+      <div class="row"><span>キャンセル料発生期間に入ってからの取消</span><span>キャンセル料へ充当</span></div>
+      <div class="row" style="border-bottom:none;"><span>返金時の振込手数料</span><span>予約者負担</span></div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;text-align:center;">
+    <p style="font-size:14.5px;color:#4a463c;margin-bottom:20px;">お支払い方法や領収書については予約・お問い合わせページでご案内しています。</p>
+    <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">予約・お問い合わせページを見る →</a>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

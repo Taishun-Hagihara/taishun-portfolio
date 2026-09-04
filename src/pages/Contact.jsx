@@ -1,13 +1,28 @@
-
-import SocialLinks2 from "../components/SocialLinks_2"
+import { useOutletContext } from "react-router-dom";
+import ContactList from "../components/ContactList";
 
 export default function Contact() {
-    return (
-        <div className="mt-25 h-90">
-            <h1 className="text-neutral-800 text-3xl sm:text-6xl w-11/12 sm:w-13/15 mx-auto font-bold mb-4">Work With Me<span className="text-blue-700">!</span></h1>
-            <p className="text-zinc-600 text-lg sm:text-3xl w-11/12 sm:w-13/15 mx-auto border-l-4 border-blue-700 pl-4">Interested in working together? Feel free to reach out </p>
-            <p className="text-zinc-600 text-lg sm:text-3xl w-11/12 sm:w-13/15 mx-auto border-l-4 border-blue-700 pl-4">- I typically reply within 72 hours.</p>
-            <div className="w-11/12 sm:w-13/15 mx-auto"><SocialLinks2 /></div>
-        </div>
-    )
+  const { lang, t } = useOutletContext();
+
+  return (
+    <main className="mx-auto max-w-[1120px] px-6 py-16 sm:py-20">
+      <h1 className="max-w-[15ch] text-5xl font-bold leading-tight text-neutral-800 sm:text-6xl">
+        {t.contactH1}
+        <span className="text-blue-700">{t.contactH1Dot}</span>
+      </h1>
+      <div className="mt-6 flex max-w-[760px] flex-col gap-2 border-l-4 border-blue-700 pl-5">
+        <p className="text-lg leading-9 text-slate-600 sm:text-[22px] sm:leading-10">
+          {t.contactLead}
+        </p>
+        <p className="text-lg leading-9 text-slate-600 sm:text-[22px] sm:leading-10">
+          {t.contactReply}
+        </p>
+      </div>
+
+      <p className="mt-14 text-sm font-semibold uppercase text-slate-400">
+        {t.reachAt}
+      </p>
+      <ContactList lang={lang} />
+    </main>
+  );
 }

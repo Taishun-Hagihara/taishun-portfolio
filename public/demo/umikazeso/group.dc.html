@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+  .stat{background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:16px 14px;text-align:center;}
+  .stat .v{font-family:'Noto Serif JP',serif;font-size:19px;color:#1F3B2E;}
+  .stat .l{font-size:11.5px;color:#8a8577;margin-top:6px;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載内容はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html" style="color:#1F3B2E;font-weight:700;">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;height:360px;overflow:hidden;">
+    <image-slot id="group-hero" shape="rect" placeholder="団体・合宿利用の写真" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot>
+    <div style="position:absolute;inset:0;background:rgba(15,25,20,.5);"></div>
+    <div style="position:absolute;left:64px;bottom:44px;color:#F7F5EF;">
+      <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">FOR GROUPS &amp; CAMPS</div>
+      <h1 style="font-family:'Noto Serif JP',serif;font-size:36px;margin:0 0 12px;">団体・合宿</h1>
+      <p style="font-size:14px;opacity:.9;margin:0;">サークル・ゼミ・部活・スポーツ団体・学校団体・企業研修・社員旅行に。</p>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:48px 48px 16px;">
+    <div style="background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:28px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;">
+      <div class="stat"><div class="v">70名</div><div class="l">最大宿泊</div></div>
+      <div class="stat"><div class="v">10〜60名</div><div class="l">推奨団体人数</div></div>
+      <div class="stat"><div class="v">40名〜</div><div class="l">全館貸切</div></div>
+      <div class="stat"><div class="v">60名</div><div class="l">大広間</div></div>
+      <div class="stat"><div class="v">可能</div><div class="l">BBQ</div></div>
+      <div class="stat"><div class="v">手持ち花火</div><div class="l">花火</div></div>
+      <div class="stat"><div class="v">持込可</div><div class="l">飲食物</div></div>
+      <div class="stat"><div class="v">持込可</div><div class="l">酒類</div></div>
+      <div class="stat"><div class="v">無料</div><div class="l">持込料</div></div>
+      <div class="stat"><div class="v">25人乗り無料</div><div class="l">送迎バス</div></div>
+      <div class="stat"><div class="v">駐車可</div><div class="l">大型バス</div></div>
+      <div class="stat"><div class="v">8,000円〜</div><div class="l">1泊2食（団体）</div></div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:32px 48px 56px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">宿泊可能人数・貸切</h2>
+    <div class="row"><span>最大宿泊人数</span><span>70名</span></div>
+    <div class="row"><span>通常の団体利用推奨人数</span><span>10〜60名</span></div>
+    <div class="row"><span>客室数</span><span>15室（和室8畳4室／10畳6室／16畳3室／団体大部屋24畳2室）</span></div>
+    <div class="row"><span>全館貸切</span><span>可能（最低40名〜。繁忙期・休前日は条件が異なる場合あり）</span></div>
+    <div class="row"><span>男女別の部屋割り</span><span>可能（提出期限：宿泊3日前）</span></div>
+    <div class="row"><span>食事会場</span><span>最大60名（超える場合は2会場または時間を分けて対応）</span></div>
+    <div class="row" style="border-bottom:none;"><span>チェックイン／チェックアウト</span><span>15:00〜21:00／10:00（荷物預かり：当日11:00〜、15:00まで）</span></div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">団体・学生向け料金</h2>
+      <div style="background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:28px;margin-bottom:20px;">
+        <div style="font-size:13px;color:#8a8577;margin-bottom:6px;">学生・合宿プラン／団体一般プラン（10名以上、最低利用人数）</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;">1泊2食 8,000円／人〜</div>
+        <div style="font-size:13.5px;color:#4a463c;margin-top:10px;">夕食をBBQに変更：+1,500円／人（合計 9,500円／人）</div>
+      </div>
+      <div class="row"><span>昼食（団体向け）</span><span>1,000円／人〜</span></div>
+      <div class="row"><span>送迎</span><span>10名以上の団体は無料</span></div>
+      <div class="row" style="border-bottom:none;"><span>詳しい料金内訳</span><span><a href="plans.dc.html">宿泊料金・プランページへ →</a></span></div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 20px;">送迎・BBQ・宴会（概要）</h2>
+    <div class="row"><span>送迎車</span><span>25人乗りマイクロバス1台・無料（10名以上の団体対象）</span></div>
+    <div class="row"><span>送迎時間・範囲</span><span>8:00〜20:00、旅館から車で20分程度まで</span></div>
+    <div class="row"><span>25名を超える場合</span><span>複数回に分けて送迎（同時に50名の輸送は不可）</span></div>
+    <div class="row"><span>BBQ</span><span>可能（最大60名、17:00〜21:00、雨天は屋根付きスペース）</span></div>
+    <div class="row"><span>飲み会・宴会</span><span>大広間にて24:00まで可能（全館貸切時は翌2:00まで）</span></div>
+    <div class="row" style="border-bottom:none;"><span>詳細</span><span><a href="access.dc.html">アクセス・送迎ページ →</a>／<a href="bbq.dc.html">BBQ・宴会・交流会ページ →</a></span></div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;color:#1F3B2E;margin:0 0 32px;">団体予約の流れ</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px 32px;">
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 1</div><div style="font-size:14px;">希望日・予定人数を確認</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 2</div><div style="font-size:14px;">空室を問い合わせ</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 3</div><div style="font-size:14px;">宿泊プランを決定</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 4</div><div style="font-size:14px;">BBQ・送迎・貸切などオプション決定</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 5</div><div style="font-size:14px;">予約確定（40名以上・貸切は予約金50,000円）</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 6</div><div style="font-size:14px;">宿泊7日前までに最終人数・食事制限・送迎希望・弁当を確定</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 7</div><div style="font-size:14px;">宿泊3日前までに部屋割り・最終送迎時間を確定</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 8</div><div style="font-size:14px;">当日チェックイン</div></div>
+        <div><div style="color:#C8A766;font-family:'Noto Serif JP',serif;font-size:13px;margin-bottom:6px;">STEP 9</div><div style="font-size:14px;">代表者が一括精算</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;text-align:center;">
+    <p style="font-size:14.5px;color:#4a463c;margin-bottom:20px;">人数変更・キャンセルの規定は必ず事前にご確認ください。</p>
+    <div style="display:flex;gap:14px;justify-content:center;">
+      <a href="cancel.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">キャンセル・人数変更を見る →</a>
+      <a href="contact.dc.html" style="border:1px solid #1F3B2E;color:#1F3B2E;padding:14px 26px;border-radius:3px;font-size:14px;">団体予約について問い合わせる →</a>
+    </div>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

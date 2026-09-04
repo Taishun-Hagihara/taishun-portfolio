@@ -1,27 +1,18 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx"
-import Contact from "../components/Contact.jsx"
-
+import Footer from "../components/Footer.jsx";
+import { COPY } from "../data/content";
 
 export default function Layoutforheader() {
+  const [lang, setLang] = useState("ja");
+  const t = COPY[lang];
 
-    return (
-        <div className="min-h-screen relative">
-            <Header />
-            <main className="relative z-10 mx-auto p-4 sm:p-6">
-                <Outlet />
-            </main>
-            <div className="border-t border-slate-200">
-                <div className="w-10/11 mx-auto">
-                    <Footer />
-                    <p className="mt-12 text-zinc-600 text-2xl">Interested in working together<span className="text-blue-700">?</span></p>
-                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                        <Contact className=" flex-1"/>
-                        <p className="text-zinc-500 sm:ml-auto"><span className="text-blue-700">2025 </span>made by 萩原大竣</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="min-h-screen bg-white text-left text-neutral-800">
+      <Header lang={lang} setLang={setLang} t={t} />
+      <Outlet context={{ lang, t }} />
+      <Footer t={t} />
+    </div>
+  );
 }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:#F7F5EF;}
+  a{color:#1F3B2E;text-decoration:none;}
+  a:hover{color:#C8A766;}
+  .navlink{color:#2B2B2B;}
+  .navlink:hover{color:#C8A766;}
+  .footlink{color:#F7F5EF;opacity:.85;}
+  .footlink:hover{color:#C8A766;opacity:1;}
+  .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #E5E2DB;font-size:14.5px;}
+  .row span:first-child{color:#8a8577;}
+  .plancard{background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:28px;}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans JP',sans-serif;color:#2B2B2B;background:#F7F5EF;">
+  <div style="background:#E5E2DB;text-align:center;font-size:12px;padding:6px 16px;letter-spacing:.05em;">※本サイトは架空の宿泊施設「紀州 海風荘」のデモサイトです。掲載の料金等はすべてサンプルデータです。</div>
+
+  <header style="position:sticky;top:0;z-index:50;background:#F7F5EF;border-bottom:1px solid #E5E2DB;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:16px;">
+    <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;flex-shrink:0;white-space:nowrap;">
+      <div style="width:44px;height:44px;border-radius:50%;background:#1F3B2E;color:#C8A766;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:20px;">海</div>
+      <div><div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:#1F3B2E;">紀州 海風荘</div><div style="font-size:10px;letter-spacing:.18em;color:#8a8577;">UMIKAZESO</div></div>
+    </a>
+    <nav style="display:flex;align-items:center;gap:16px;font-size:13.5px;white-space:nowrap;flex-shrink:0;">
+      <a class="navlink" href="rooms.dc.html">客室</a>
+      <a class="navlink" href="cuisine.dc.html">お料理</a>
+            <a class="navlink" href="group.dc.html">団体・合宿</a>
+      <a class="navlink" href="access.dc.html">アクセス</a>
+            <a href="contact.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:10px 18px;border-radius:3px;font-size:13px;">予約・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px 16px;">
+    <div style="font-size:13px;letter-spacing:.15em;color:#C8A766;margin-bottom:10px;">PLANS &amp; RATES</div>
+    <h1 style="font-family:'Noto Serif JP',serif;font-size:32px;color:#1F3B2E;margin:0 0 16px;">宿泊料金・プラン</h1>
+    <p style="font-size:14.5px;color:#4a463c;line-height:1.9;max-width:760px;">すべて税込表記です。入湯税はかかりません（温泉施設ではないため）。駐車場は無料です。</p>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:24px 48px 56px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 20px;">一般プラン（お一人様）</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="plancard">
+        <div style="font-size:13px;color:#8a8577;margin-bottom:6px;">素泊まり</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;margin-bottom:14px;">6,500円〜</div>
+        <div style="font-size:13px;color:#4a463c;line-height:1.9;">宿泊／大浴場利用／フェイスタオル／バスタオル／歯ブラシ／浴衣／Wi-Fi</div>
+      </div>
+      <div class="plancard">
+        <div style="font-size:13px;color:#8a8577;margin-bottom:6px;">1泊朝食付き</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;margin-bottom:14px;">7,500円〜</div>
+        <div style="font-size:13px;color:#4a463c;line-height:1.9;">宿泊／朝食／大浴場／基本アメニティ</div>
+      </div>
+      <div class="plancard" style="border-color:#C8A766;">
+        <div style="font-size:13px;color:#8a8577;margin-bottom:6px;">1泊2食付き</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:26px;color:#1F3B2E;margin-bottom:14px;">9,000円〜</div>
+        <div style="font-size:13px;color:#4a463c;line-height:1.9;">宿泊／夕食／朝食／大浴場／基本アメニティ</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 8px;">学生・合宿プラン（10名以上）</h2>
+      <p style="font-size:13px;color:#8a8577;margin:0 0 20px;">団体一般プランも同条件で10名以上よりご利用いただけます。</p>
+      <div style="background:#fff;border:1px solid #E5E2DB;border-radius:4px;padding:32px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+        <div style="text-align:center;flex:1;min-width:150px;">
+          <div style="font-size:13px;color:#8a8577;">1泊2食</div>
+          <div style="font-family:'Noto Serif JP',serif;font-size:24px;color:#1F3B2E;">8,000円</div>
+        </div>
+        <div style="font-size:24px;color:#C8A766;">+</div>
+        <div style="text-align:center;flex:1;min-width:150px;">
+          <div style="font-size:13px;color:#8a8577;">夕食をBBQに変更</div>
+          <div style="font-family:'Noto Serif JP',serif;font-size:24px;color:#1F3B2E;">1,500円</div>
+        </div>
+        <div style="font-size:24px;color:#C8A766;">=</div>
+        <div style="text-align:center;flex:1;min-width:150px;background:#1F3B2E;color:#F7F5EF;padding:14px;border-radius:3px;">
+          <div style="font-size:13px;opacity:.8;">BBQプラン合計</div>
+          <div style="font-family:'Noto Serif JP',serif;font-size:24px;">9,500円</div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:#8a8577;margin-top:16px;">学生・合宿プラン、団体一般プランともに最低利用人数は10名です。</p>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 20px;">年齢・お子様料金</h2>
+    <div class="row"><span>小学生</span><span>大人料金の70%</span></div>
+    <div class="row"><span>未就学児（食事・布団あり）</span><span>大人料金の50%</span></div>
+    <div class="row" style="border-bottom:none;"><span>未就学児（添い寝）</span><span>1,500円</span></div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:0 48px 56px;">
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 20px;">昼食・お弁当・お飲み物</h2>
+    <div class="row"><span>団体向け昼食</span><span>1,000円／人〜</span></div>
+    <div class="row"><span>通常弁当</span><span>800円</span></div>
+    <div class="row"><span>スポーツ合宿向け弁当</span><span>1,000円</span></div>
+    <div class="row"><span>ソフトドリンク</span><span>200円〜</span></div>
+    <div class="row"><span>瓶ビール</span><span>700円</span></div>
+    <div class="row" style="border-bottom:none;"><span>ノンアルコールビール</span><span>450円</span></div>
+  </section>
+
+  <section style="background:#EFECE3;padding:56px 48px;">
+    <div style="max-width:1140px;margin:0 auto;">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;color:#1F3B2E;margin:0 0 20px;">追加料金・持ち込み・繁忙期</h2>
+      <div class="row"><span>飲食物・酒類の持ち込み</span><span>可能／持込料は無料</span></div>
+      <div class="row"><span>入湯税</span><span>不要（温泉施設ではないため）</span></div>
+      <div class="row"><span>その他必須追加料金</span><span>なし</span></div>
+      <div class="row"><span>駐車場</span><span>無料</span></div>
+      <div class="row"><span>送迎</span><span>条件を満たす団体は無料</span></div>
+      <div class="row" style="border-bottom:none;"><span>繁忙期（GW・お盆・年末年始・一部休前日）</span><span>1名あたり+1,000〜2,000円の場合あり（予約前に金額を提示します）</span></div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:56px 48px;text-align:center;">
+    <p style="font-size:14.5px;color:#4a463c;margin-bottom:20px;">最低利用人数・貸切・部屋割りなど団体固有の条件は団体・合宿ページで詳しくご案内しています。</p>
+    <div style="display:flex;gap:14px;justify-content:center;">
+      <a href="group.dc.html" style="background:#1F3B2E;color:#F7F5EF;padding:14px 26px;border-radius:3px;font-size:14px;">団体・合宿ページを見る →</a>
+      <a href="cancel.dc.html" style="border:1px solid #1F3B2E;color:#1F3B2E;padding:14px 26px;border-radius:3px;font-size:14px;">キャンセル規定を見る →</a>
+    </div>
+  </section>
+
+  <footer style="background:#17281F;color:#F7F5EF;padding:48px 48px 24px;text-align:center;font-size:12px;opacity:.65;line-height:1.8;">
+    ※「紀州 海風荘」は架空の宿泊施設です。名称・所在地・料金・定員等はすべてサンプルデータです。<br>© UMIKAZESO (fictional / demo site) ｜ <a class="footlink" href="index.dc.html" style="color:#C8A766;">トップへ戻る</a>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>
